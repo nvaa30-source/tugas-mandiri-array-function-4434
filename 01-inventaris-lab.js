@@ -56,3 +56,12 @@ console.log("\n[apus Barang]");
 hapusBarang(barangLab, "Mouse");
 console.log("\ndaftar barang terbaru:");
 tampilkanBarang(barangLab);
+
+console.log("\n=== PENGUJIAN PROGRAM ===");
+tambahBarang(barangLab, "printer");
+tambahBarang(barangLab, "monitor");
+tambahBarang(barangLab, "");
+console.log("Cari 'Scanner': " + cariBarang(barangLab, "Scanner"));
+hapusBarang(barangLab, "Scanner");
+console.log("uji Array Kosong:");
+tampilkanBarang([]);
