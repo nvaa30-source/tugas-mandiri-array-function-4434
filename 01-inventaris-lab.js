@@ -44,3 +44,15 @@ function hapusBarang(daftarBarang, namaBarang) {
     console.log(namaBarang + " berhasil dihapus.");
     return true;
 }
+
+console.log("=== INVENTARIS LABORATORIUM ===");
+console.log("\ndaftar Barang Awal:");
+tampilkanBarang(barangLab);
+console.log("\n[tambah Barang]");
+tambahBarang(barangLab, "Webcam");
+console.log("\n[cari Barang]");
+console.log("monitor ditemukan pada indeks " + cariBarang(barangLab, "Monitor") + ".");
+console.log("\n[apus Barang]");
+hapusBarang(barangLab, "Mouse");
+console.log("\ndaftar barang terbaru:");
+tampilkanBarang(barangLab);
