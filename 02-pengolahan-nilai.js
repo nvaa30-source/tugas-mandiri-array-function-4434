@@ -1,4 +1,4 @@
-const nilaiPraktik = [80, 70, 90, 65, 75, 85];
+const nilaiPraktik = [60, 65, 70, 80, 90];
 const batasTuntas = 75;
 
 function tampilkanNilai(nilaiPraktik) {
