@@ -17,3 +17,23 @@ function hitungRatarata(nilaiPraktik) {
     }
     return totalNilai / nilaiPraktik.length;
 }
+
+function hitungJumlahTuntas(nilaiPraktik, batasTuntas) {
+    jumlahTuntas = 0;
+    for (i = 0; i < nilaiPraktik.length; i++) {
+        if (nilaiPraktik[i] >= batasTuntas) {
+            jumlahTuntas++;
+        }
+    }
+    return jumlahTuntas;
+}
+
+function hitungJumlahBelumTuntas(nilaiPraktik, batasTuntas) {
+    jumlahBelumTuntas = 0;
+    for (i = 0; i < nilaiPraktik.length; i++) {
+        if (nilaiPraktik[i] < batasTuntas) {
+            jumlahBelumTuntas++;
+        }
+    }
+    return jumlahBelumTuntas;
+}
