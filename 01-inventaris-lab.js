@@ -29,3 +29,8 @@ function tampilkanBarang(daftarBarang) {
     console.log(namaBarangBaru + " berhasil ditambahkan.");
     return true;
 }
+
+function cariBarang(daftarBarang, namaBarang) {
+    let indeks = daftarBarang.indexOf(namaBarang);
+    return indeks;
+}
