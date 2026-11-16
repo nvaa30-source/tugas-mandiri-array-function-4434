@@ -6,3 +6,14 @@ function tampilkanNilai(nilaiPraktik) {
         console.log("siswa " + (i + 1) + ": " + nilaiPraktik[i]);
     }
 }
+
+function hitungRatarata(nilaiPraktik) {
+    if (nilaiPraktik.length === 0) {
+        return 0;
+    }
+    totalNilai = 0;
+    for (i = 0; i < nilaiPraktik.length; i++) {
+        totalNilai += nilaiPraktik[i];
+    }
+    return totalNilai / nilaiPraktik.length;
+}
