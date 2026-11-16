@@ -15,3 +15,17 @@ function tampilkanBarang(daftarBarang) {
         }
         console.log("jumlah barang: " + daftarBarang.length);
     }
+
+    function tambahBarang(daftarBarang, namaBarangBaru) {
+    if (namaBarangBaru === "") {
+        console.log("penambahan ditolak");
+        return false;
+    }
+    if (daftarBarang.includes(namaBarangBaru)) {
+        console.log("penambahan ditolak");
+        return false;
+    }
+    daftarBarang.push(namaBarangBaru);
+    console.log(namaBarangBaru + " berhasil ditambahkan.");
+    return true;
+}
